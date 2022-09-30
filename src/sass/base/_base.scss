@@ -1,0 +1,134 @@
+$color-dark-blue: #0b0d17;
+$color-lilac: #d0d6f9;
+$color-white: #ffffff;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  // grid-template-rows: max-content 100%;
+  grid-template-rows: repeat(2, max-content);
+  color: $color-lilac;
+  background-color: $color-dark-blue;
+  position: relative;
+}
+
+#body__home {
+  align-content: space-between;
+  background-image: url(images/home/background-home-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background-image: url(images/home/background-home-tablet.jpg);
+    background-size: auto;
+  }
+
+  @include respond(laptop) {
+    background-image: url(images/home/background-home-desktop.jpg);
+    background-size: cover;
+  }
+
+  @include respond(desktop) {
+    background-image: url(images/home/background-home-desktop.jpg);
+    background-size: cover;
+  }
+}
+
+#body__destination {
+  background-image: url(images/destination/background-destination-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background-image: url(images/destination/background-destination-tablet.jpg);
+    background-size: auto;
+  }
+
+  @include respond(laptop) {
+    background-image: url(images/destination/background-destination-desktop.jpg);
+    background-size: cover;
+  }
+
+  @include respond(desktop) {
+    background-image: url(images/destination/background-destination-desktop.jpg);
+    background-size: cover;
+  }
+}
+
+#body__crew {
+  align-content: space-between;
+  background-image: url(images/crew/background-crew-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background-image: url(images/crew/background-crew-tablet.jpg);
+    background-size: auto;
+  }
+
+  @include respond(laptop) {
+    background-image: url(images/crew/background-crew-desktop.jpg);
+    background-size: cover;
+  }
+
+  @include respond(desktop) {
+    background-image: url(images/crew/background-crew-desktop.jpg);
+    background-size: cover;
+  }
+}
+
+#body__technology {
+  background-image: url(images/technology/background-technology-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background-image: url(images/technology/background-technology-tablet.jpg);
+    background-size: auto;
+  }
+
+  @include respond(laptop) {
+    background-image: url(images/technology/background-technology-desktop.jpg);
+    background-size: cover;
+  }
+
+  @include respond(desktop) {
+    background-image: url(images/technology/background-technology-desktop.jpg);
+    background-size: cover;
+  }
+}

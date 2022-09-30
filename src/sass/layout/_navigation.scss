@@ -1,0 +1,113 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.6rem;
+  z-index: 10;
+
+  @include respond(tab-port) {
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  @include respond(laptop) {
+    padding-top: 2.6rem;
+    padding-left: 4rem;
+  }
+
+  @include respond(dekstop) {
+    padding-top: 3.6rem;
+    padding-left: 5.5rem;
+  }
+}
+
+.line {
+  height: 1px;
+  width: 455px;
+  background-color: $color-lilac;
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  left: -420px;
+}
+
+.close {
+  position: relative;
+  z-index: 100;
+}
+
+.navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-height: 100%;
+  width: 65%;
+  padding-top: 13rem;
+  padding-left: 3.5rem;
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(50px);
+
+  @include respond(tab-port) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-left: 0;
+    width: auto;
+  }
+
+  @include respond(laptop) {
+    width: 62%;
+  }
+}
+
+.nav-items {
+  @include respond(tab-port) {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @include respond(laptop) {
+    gap: 6rem;
+    padding-left: 5.5rem;
+  }
+}
+
+.nav-item {
+  margin-bottom: 3rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 0;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 3.6rem;
+    padding-top: 3.9rem;
+  }
+
+  &:hover {
+    @include respond(laptop) {
+      border-bottom: 3px solid #979797;
+    }
+  }
+
+  &.active {
+    @include respond(tab-port) {
+      border-bottom: 3px solid $color-white;
+    }
+  }
+
+  & a {
+    letter-spacing: 2.7px;
+    display: grid;
+    grid-template-columns: 20px auto;
+    gap: 1rem;
+    color: $color-white;
+  }
+}
+
+.nav-number {
+  font-weight: bold;
+}

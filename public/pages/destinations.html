@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../js/script.js" defer></script>
+    <title>Space tourism</title>
+  </head>
+  <body id="body__destination">
+    <nav>
+      <div class="logo">
+        <img src="../images/shared/logo.svg" alt="Logo" />
+      </div>
+
+      <div class="mobile-nav">
+        <div class="hamburger hidden">
+          <img src="../images/shared/icon-hamburger.svg" alt="Mobile menu" />
+        </div>
+        <div class="close hidden">
+          <img src="../images/shared/icon-close.svg" alt="Close menu" />
+        </div>
+      </div>
+      <div class="navigation hidden">
+        <div class="line hidden"></div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="../index.html"><span class="nav-number">00</span>Home</a>
+          </li>
+          <li class="nav-item active">
+            <a href="destinations.html"><span class="nav-number">01</span>Destination</a>
+          </li>
+          <li class="nav-item">
+            <a href="crew.html"><span class="nav-number">02</span>Crew </a>
+          </li>
+          <li class="nav-item">
+            <a href="technology.html"><span class="nav-number">03</span>Technology</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main__destination">
+      <h3><span class="title-number">01</span>Pick your destination</h3>
+      <div class="image-container">
+        <img id="destination-img" src="../images/destination/image-moon.png" alt="The Moon" />
+      </div>
+      <section class="section__destination">
+        <div class="destinations" id="destination">
+          <a class="destination-link active" id="Moon">Moon</a>
+          <a class="destination-link" id="Mars">Mars</a>
+          <a class="destination-link" id="Europa">Europa</a>
+          <a class="destination-link" id="Titan">Titan</a>
+        </div>
+        <h2>Moon</h2>
+        <p class="text" id="Moon">
+          See our planet as you've never seen it before. A perfect relaxing trip away to help regain
+          perspective and come back refreshed. While you're there, take in some history by visiting
+          the Luna 2 and Apollo 11 landing sites.
+        </p>
+        <p class="text hidden" id="Mars">
+          Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the
+          tallest planetary mountain in our solar system. It's two and a half times the size of
+          Everest!
+        </p>
+        <p class="text hidden" id="Europa">
+          The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover's
+          dream. With an icy surface, it's perfect for a bit of ice skating, curling, hockey, or
+          simple relaxation in your snug wintery cabin.
+        </p>
+        <p class="text hidden" id="Titan">
+          The only moon known to have a dense atmosphere other than Earth, Titan is a home away from
+          home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings
+          of Saturn.
+        </p>
+        <div class="flex-container">
+          <div>
+            <h5>Avg. distance</h5>
+            <h4 id="distance">384,400 km</h4>
+          </div>
+          <div>
+            <h5>Est. travel time</h5>
+            <h4 id="time">3 days</h4>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
